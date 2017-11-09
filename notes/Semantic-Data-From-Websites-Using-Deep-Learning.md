@@ -63,6 +63,10 @@ There are a lot of datasets used to benchmark content extraction(CE) in literatu
 ### Conclusion
 For example Yao uses in his paper both L3S-GN1 and Dragnet, which could probably make for the most complete dataset. Most of them use text blocks in the definition of Kohlschutter, but tags can be retrieved via text blocks as there is a 1-to-1 mapping.
 
+Due to their completeness, I settled on using **Dragnet**(which contains **CleanEval-EN**, **CETR** and their own). Decided to drop **Big5** and **Myriad** as the latter had format issues noted by the authors as well, and the former doesn't fit our task which would rather need a greater number of sites rather than multiple pages from the same website.
+
+We will also be trying to convert he **L3S-GN1** which has a similar structure.
+
 ### Experiments(how we aproach the problem?)
 For the the first set of features, we will be trying to classify om ur dataset and the benchmark ones, each time using subsets of the following sets of features
 
